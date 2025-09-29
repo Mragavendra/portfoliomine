@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code, Database, Globe, Smartphone, Brain, Cloud, Shield, Zap } from 'lucide-react';
+import { Code, Monitor, Layout, Palette, Github, Server, Globe } from "lucide-react";
+
 
 const About = () => {
   const experiences = [
@@ -27,42 +28,49 @@ const About = () => {
 
 
   const services = [
-    {
-      icon: Brain,
-      title: 'AI & Machine Learning',
-      description: 'Building intelligent applications with TensorFlow, PyTorch, and modern ML frameworks for predictive analytics and automation.',
-      gradient: 'from-neon-blue to-neon-purple',
-    },
-    {
-      icon: Cloud,
-      title: 'Cloud Architecture',
-      description: 'Designing scalable cloud solutions on AWS, Azure, and GCP with serverless computing and microservices architecture.',
-      gradient: 'from-neon-purple to-neon-pink',
-    },
-    {
-      icon: Code,
-      title: 'Full Stack Development',
-      description: 'Creating end-to-end web applications with React, Node.js, TypeScript, and modern development practices.',
-      gradient: 'from-neon-pink to-neon-blue',
-    },
-    {
-      icon: Database,
-      title: 'Data Engineering',
-      description: 'Building robust data pipelines, real-time analytics, and high-performance database solutions.',
-      gradient: 'from-neon-green to-neon-blue',
-    },
-    {
-      icon: Shield,
-      title: 'DevSecOps',
-      description: 'Implementing security-first development practices with CI/CD pipelines and automated testing.',
-      gradient: 'from-neon-yellow to-neon-purple',
-    },
-    {
-      icon: Zap,
-      title: 'Performance Optimization',
-      description: 'Optimizing applications for speed, scalability, and efficiency using advanced profiling and monitoring.',
-      gradient: 'from-neon-blue to-neon-green',
-    },
+  {
+    icon: Monitor,
+    title: "Frontend Development",
+    description:
+      "Building responsive, interactive, and user-friendly web applications using React.js, JavaScript (ES6+), HTML5, CSS3, and Bootstrap.",
+    gradient: "from-neon-blue to-neon-purple",
+  },
+  {
+    icon: Layout,
+    title: "UI/UX & Styling",
+    description:
+      "Designing modern and aesthetic user interfaces with Tailwind CSS and UI libraries like Preline, Flowbite, DaisyUI, and Ripple UI.",
+    gradient: "from-neon-purple to-neon-pink",
+  },
+  {
+    icon: Globe,
+    title: "WordPress Development",
+    description:
+      "Creating and customizing WordPress websites with responsive design, pixel-perfect layouts, and smooth user experiences.",
+    gradient: "from-neon-pink to-neon-blue",
+  },
+  {
+    icon: Server,
+    title: "API Integration",
+    description:
+      "Integrating REST APIs seamlessly into applications for real-time data, authentication, and dynamic content rendering.",
+    gradient: "from-neon-green to-neon-blue",
+  },
+  {
+    icon: Palette,
+    title: "Dark/Light Mode",
+    description:
+      "Implementing modern theme toggles with smooth transitions to enhance accessibility and user personalization.",
+    gradient: "from-neon-yellow to-neon-purple",
+  },
+  {
+    icon: Github,
+    title: "Version Control & Tools",
+    description:
+      "Proficient with Git, GitHub, VS Code, Vite, and Postman for efficient development workflows and collaboration.",
+    gradient: "from-neon-blue to-neon-green",
+  },
+
   ];
 
   const containerVariants = {

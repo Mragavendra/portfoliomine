@@ -17,7 +17,7 @@ const Contact = () => {
 
   const validateForm = () => {
     const newErrors: any = {};
-    
+
     if (!formData.name.trim()) newErrors.name = 'Name is required';
     if (!formData.email.trim()) {
       newErrors.email = 'Email is required';
@@ -26,24 +26,24 @@ const Contact = () => {
     }
     if (!formData.subject.trim()) newErrors.subject = 'Subject is required';
     if (!formData.message.trim()) newErrors.message = 'Message is required';
-    
+
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!validateForm()) return;
-    
+
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSuccess(true);
       setFormData({ name: '', email: '', subject: '', message: '', budget: '', timeline: '' });
-      
+
       setTimeout(() => {
         setIsSuccess(false);
       }, 3000);
@@ -53,7 +53,7 @@ const Contact = () => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
-    
+
     // Clear error when user starts typing
     if (errors[name]) {
       setErrors((prev: any) => ({ ...prev, [name]: '' }));
@@ -64,21 +64,21 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'alex.morgan@email.com',
-      href: 'mailto:alex.morgan@email.com',
+      value: 'mraghavendra848@gmail.com',
+      href: 'mailto:mraghavendra848@gmail.com',
       color: 'text-neon-blue',
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
+      value: '+91 6302720486',
+      href: 'tel:+916302720486',
       color: 'text-neon-purple',
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Bangalore, India',
       href: '#',
       color: 'text-neon-pink',
     },
@@ -113,7 +113,7 @@ const Contact = () => {
     <section id="contact" className="py-32 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-black via-dark-50/10 to-black"></div>
-      
+
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
@@ -124,18 +124,19 @@ const Contact = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-20"
           >
-            <h2 className="text-5xl md:text-7xl font-black mb-8">
+            <h2 className="text-4xl md:text-6xl font-black mb-8">
               <span className="bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink bg-clip-text text-transparent">
                 Let's Create Magic
               </span>
             </h2>
-            <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
               Ready to bring your vision to life? Let's discuss your next groundbreaking project.
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple font-semibold">
-                From concept to deployment, I'll make it extraordinary.
+                From pixel-perfect UI design to flawless responsiveness, I never compromise on quality—ensuring your ideas shine through with stunning, user-focused experiences.
               </span>
             </p>
+
           </motion.div>
 
           <div className="grid lg:grid-cols-2 gap-16">
@@ -154,7 +155,7 @@ const Contact = () => {
                   </span>
                 </h3>
                 <p className="text-gray-300 leading-relaxed text-lg mb-8">
-                  Whether you have a revolutionary idea, need technical consultation, or want to collaborate 
+                  Whether you have a revolutionary idea, need technical consultation, or want to collaborate
                   on cutting-edge projects, I'm here to help turn your vision into reality.
                 </p>
               </div>
@@ -268,14 +269,13 @@ const Contact = () => {
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        className={`w-full px-4 py-4 bg-black/60 border rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-neon-blue transition-all duration-300 ${
-                          errors.name ? 'border-red-500' : 'border-white/20 focus:border-neon-blue'
-                        }`}
+                        className={`w-full px-4 py-4 bg-black/60 border rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-neon-blue transition-all duration-300 ${errors.name ? 'border-red-500' : 'border-white/20 focus:border-neon-blue'
+                          }`}
                         placeholder="Your full name"
                       />
                       {errors.name && <p className="text-red-400 text-sm mt-2">{errors.name}</p>}
                     </div>
-                    
+
                     <div>
                       <label htmlFor="email" className="block text-gray-300 text-sm font-medium mb-3">
                         Email Address *
@@ -286,9 +286,8 @@ const Contact = () => {
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                        className={`w-full px-4 py-4 bg-black/60 border rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-neon-blue transition-all duration-300 ${
-                          errors.email ? 'border-red-500' : 'border-white/20 focus:border-neon-blue'
-                        }`}
+                        className={`w-full px-4 py-4 bg-black/60 border rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-neon-blue transition-all duration-300 ${errors.email ? 'border-red-500' : 'border-white/20 focus:border-neon-blue'
+                          }`}
                         placeholder="your@email.com"
                       />
                       {errors.email && <p className="text-red-400 text-sm mt-2">{errors.email}</p>}
@@ -305,9 +304,8 @@ const Contact = () => {
                       name="subject"
                       value={formData.subject}
                       onChange={handleChange}
-                      className={`w-full px-4 py-4 bg-black/60 border rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-neon-blue transition-all duration-300 ${
-                        errors.subject ? 'border-red-500' : 'border-white/20 focus:border-neon-blue'
-                      }`}
+                      className={`w-full px-4 py-4 bg-black/60 border rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-neon-blue transition-all duration-300 ${errors.subject ? 'border-red-500' : 'border-white/20 focus:border-neon-blue'
+                        }`}
                       placeholder="What's your project about?"
                     />
                     {errors.subject && <p className="text-red-400 text-sm mt-2">{errors.subject}</p>}
@@ -333,7 +331,7 @@ const Contact = () => {
                         ))}
                       </select>
                     </div>
-                    
+
                     <div>
                       <label htmlFor="timeline" className="block text-gray-300 text-sm font-medium mb-3">
                         Timeline
@@ -365,9 +363,8 @@ const Contact = () => {
                       value={formData.message}
                       onChange={handleChange}
                       rows={6}
-                      className={`w-full px-4 py-4 bg-black/60 border rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-neon-blue transition-all duration-300 resize-none ${
-                        errors.message ? 'border-red-500' : 'border-white/20 focus:border-neon-blue'
-                      }`}
+                      className={`w-full px-4 py-4 bg-black/60 border rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-neon-blue transition-all duration-300 resize-none ${errors.message ? 'border-red-500' : 'border-white/20 focus:border-neon-blue'
+                        }`}
                       placeholder="Tell me about your project vision, requirements, and goals..."
                     />
                     {errors.message && <p className="text-red-400 text-sm mt-2">{errors.message}</p>}
