@@ -9,42 +9,42 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'AI-Powered Analytics Dashboard',
-      category: 'AI/ML',
-      description: 'Next-generation analytics platform with machine learning insights and real-time data visualization.',
-      fullDescription: 'Built a comprehensive AI-powered analytics dashboard using React, Python, and TensorFlow. Features include predictive analytics, anomaly detection, real-time data streaming, and interactive visualizations. Implemented custom ML models for user behavior prediction and automated insights generation.',
-      image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'TypeScript', 'Python', 'TensorFlow', 'D3.js', 'WebSocket', 'PostgreSQL'],
-      github: '#',
-      live: '#',
-      stats: { stars: 234, forks: 45, views: '12.5k' },
+      title: 'Deventials – Developer Essentials UI',
+      category: 'Frontend/UI',
+      description: 'Fully responsive UI for a multifunctional developer toolkit app with dark/light mode toggle.',
+      fullDescription: 'Designed and developed a fully responsive UI for Deventials, a multifunctional developer toolkit app with 25+ tools like JSON editors, image compressors, and more. Implemented dark/light theme switching and scalable component architecture using React and Tailwind CSS.',
+      image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800', // Replace with your actual screenshot if available
+      technologies: ['JavaScript', 'Tailwind CSS', 'HTML', 'Dark/Light Mode'],
+      github: '#', // Add GitHub link if available
+      live: 'https://innogenx.co.in/deventials/',
+      stats: { stars: 0, forks: 0, views: 'N/A' }, // Replace with actual stats if you track them
       featured: true,
     },
     {
       id: 2,
-      title: 'Cloud-Native Microservices Platform',
-      category: 'Cloud',
-      description: 'Scalable microservices architecture with Kubernetes orchestration and serverless functions.',
-      fullDescription: 'Designed and implemented a cloud-native platform using Docker, Kubernetes, and AWS Lambda. Features include auto-scaling, service mesh, distributed tracing, and CI/CD pipelines. Achieved 99.9% uptime with automatic failover and load balancing.',
-      image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Node.js', 'Docker', 'Kubernetes', 'AWS', 'Terraform', 'GraphQL', 'Redis'],
-      github: '#',
-      live: '#',
-      stats: { stars: 189, forks: 67, views: '8.9k' },
+      title: 'Fekki – AR-Enhanced Manuals',
+      category: 'AR/Frontend',
+      description: 'Immersive AR manuals transforming traditional instructional content into interactive experiences.',
+      fullDescription: 'Redefining the way users engage with manuals by leveraging Augmented Reality (AR) technology. Transformed traditional instructional content into immersive AR experiences to improve assembly, troubleshooting, and operational efficiency.',
+      image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800', // Replace with actual screenshot if available
+      technologies: ['wordPress','Responsive Design', 'mobile-friendly', 'pixel-perfect UI'],
+      github: '#', // Add GitHub link if available
+      live: 'https://fekki.io/',
+      stats: { stars: 0, forks: 0, views: 'N/A' }, // Replace with actual stats if available
       featured: true,
     },
     {
       id: 3,
-      title: 'Real-time Collaboration Suite',
-      category: 'Full Stack',
-      description: 'Modern collaboration platform with real-time editing, video calls, and team management.',
-      fullDescription: 'Developed a comprehensive collaboration suite with real-time document editing, video conferencing, screen sharing, and project management tools. Built with React, Node.js, WebRTC, and Socket.io for seamless real-time communication.',
-      image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'Node.js', 'WebRTC', 'Socket.io', 'MongoDB', 'Redis', 'AWS S3'],
-      github: '#',
-      live: '#',
-      stats: { stars: 156, forks: 34, views: '6.7k' },
-      featured: false,
+      title: 'GlowSkin – Advanced Hair, Skin & Wellness Care Platform',
+      category: 'WordPress/Frontend',
+      description: 'Digital platform for advanced skincare and wellness services with a focus on user experience.',
+      fullDescription: 'Built a digital platform for advanced skincare and wellness services, featuring solutions like laser hair removal, hair restoration, acne and scar treatments, anti-aging therapies, and Panchakarma-based Ayurveda. Designed to enhance user trust, accessibility, and overall experience.',
+      image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800', // Replace with actual screenshot if available
+      technologies: ['WordPress', 'Responsive Design', 'mobile-friendly', 'pixel-perfect UI'],
+      github: '#', // Add GitHub link if available
+      live: 'https://glowskin.cc/',
+      stats: { stars: 0, forks: 0, views: 'N/A' }, // Replace with actual stats if tracked
+      featured: true,
     },
     {
       id: 4,
@@ -89,8 +89,8 @@ const Projects = () => {
 
   const categories = ['All', 'AI/ML', 'Cloud', 'Full Stack', 'Web3', 'Mobile'];
 
-  const filteredProjects = filter === 'All' 
-    ? projects 
+  const filteredProjects = filter === 'All'
+    ? projects
     : projects.filter(project => project.category === filter);
 
   const featuredProjects = projects.filter(project => project.featured);
@@ -99,7 +99,7 @@ const Projects = () => {
     <section id="projects" className="py-32 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-black via-dark-50/20 to-black"></div>
-      
+
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
@@ -129,11 +129,10 @@ const Projects = () => {
                 <motion.button
                   key={category}
                   onClick={() => setFilter(category)}
-                  className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
-                    filter === category
-                      ? 'bg-gradient-to-r from-neon-blue to-neon-purple text-white shadow-neon'
-                      : 'bg-black/40 text-gray-400 hover:text-white border border-white/10 hover:border-white/20 backdrop-blur-sm'
-                  }`}
+                  className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${filter === category
+                    ? 'bg-gradient-to-r from-neon-blue to-neon-purple text-white shadow-neon'
+                    : 'bg-black/40 text-gray-400 hover:text-white border border-white/10 hover:border-white/20 backdrop-blur-sm'
+                    }`}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   data-cursor="pointer"
@@ -157,7 +156,7 @@ const Projects = () => {
                 🌟 Spotlight Projects
               </span>
             </h3>
-            
+
             <div className="grid lg:grid-cols-2 gap-8">
               {featuredProjects.slice(0, 2).map((project, index) => (
                 <motion.div
@@ -202,7 +201,7 @@ const Projects = () => {
                       </div>
                     </div>
                   </div>
-                  
+
                   {/* Project Content */}
                   <div className="p-8">
                     <h4 className="text-2xl font-bold text-white mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-neon-blue group-hover:to-neon-purple transition-all duration-300">
@@ -211,7 +210,7 @@ const Projects = () => {
                     <p className="text-gray-300 leading-relaxed mb-6">
                       {project.description}
                     </p>
-                    
+
                     <div className="flex flex-wrap gap-2 mb-6">
                       {project.technologies.slice(0, 4).map((tech, techIndex) => (
                         <span
@@ -294,7 +293,7 @@ const Projects = () => {
                     </div>
                   )}
                 </div>
-                
+
                 <div className="p-6">
                   <h4 className="text-xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-neon-blue group-hover:to-neon-purple transition-all duration-300">
                     {project.title}
@@ -302,7 +301,7 @@ const Projects = () => {
                   <p className="text-gray-300 text-sm leading-relaxed mb-4">
                     {project.description}
                   </p>
-                  
+
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.slice(0, 3).map((tech, techIndex) => (
                       <span
@@ -397,7 +396,7 @@ const Projects = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="p-8 md:p-12">
                 <div className="flex items-center space-x-4 mb-6">
                   <h3 className="text-4xl font-bold bg-gradient-to-r from-neon-blue to-neon-purple bg-clip-text text-transparent">
@@ -407,11 +406,11 @@ const Projects = () => {
                     {selectedProject.category}
                   </span>
                 </div>
-                
+
                 <p className="text-gray-300 leading-relaxed mb-8 text-lg">
                   {selectedProject.fullDescription}
                 </p>
-                
+
                 <div className="mb-8">
                   <h4 className="text-2xl font-bold text-white mb-4">Technologies Used</h4>
                   <div className="flex flex-wrap gap-3">

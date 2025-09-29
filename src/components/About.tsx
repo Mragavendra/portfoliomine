@@ -6,26 +6,25 @@ const About = () => {
   const experiences = [
     {
       company: 'TechCorp Solutions',
-      role: 'Senior Full Stack Developer & AI Specialist',
-      period: '2022 - Present',
-      description: 'Leading development of AI-powered enterprise applications using React, Node.js, and cloud technologies. Architecting scalable microservices and mentoring development teams.',
-      achievements: ['Increased system performance by 300%', 'Led team of 8 developers', 'Implemented ML models in production'],
+      role: 'AI-Powered Website Development',
+      description: 'Built advanced websites integrating AI-driven features and performance optimization. Focused on responsive design and scalable frontend architecture.',
+      achievements: ['Developed intelligent dashboards', 'Enhanced SEO and accessibility', 'Delivered high-performance websites'],
     },
     {
       company: 'InnovateAI',
-      role: 'Full Stack Developer & Cloud Architect',
-      period: '2020 - 2022',
-      description: 'Built and deployed cloud-native applications with modern JavaScript frameworks. Specialized in serverless architecture and real-time data processing.',
-      achievements: ['Reduced infrastructure costs by 40%', 'Built 15+ production applications', 'Achieved 99.9% uptime'],
+      role: 'Light & Dark Mode Implementation',
+      description: 'Specialized in creating seamless light and dark mode experiences across web platforms with modern JavaScript frameworks.',
+      achievements: ['Implemented smooth theme toggles', 'Optimized UI consistency across devices', 'Reduced design complexity with reusable components'],
     },
     {
       company: 'WebCraft Studios',
-      role: 'Frontend Developer & UX Engineer',
-      period: '2018 - 2020',
-      description: 'Developed responsive web applications with focus on performance and user experience. Collaborated with design teams to create pixel-perfect interfaces.',
-      achievements: ['Improved page load times by 60%', 'Created design system used by 20+ projects', 'Won "Best UI/UX" award'],
+      role: 'Web Applications Development',
+      description: 'Designed and developed user-friendly web applications with a strong focus on UI/UX and responsive layouts.',
+      achievements: ['Improved application performance', 'Created reusable design systems', 'Delivered cross-browser compatibility'],
     },
   ];
+
+
 
   const services = [
     {

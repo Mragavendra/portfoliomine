@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Code, Database, Cloud, Brain, Shield, Zap, Cpu, Globe } from 'lucide-react';
+import { Code, Database, Cloud, Brain } from 'lucide-react';
 
 const Skills = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -12,51 +12,32 @@ const Skills = () => {
       icon: Code,
       color: 'from-neon-blue to-neon-purple',
       skills: [
-        { name: 'React/Next.js', level: 98, description: 'Advanced hooks, SSR, performance optimization' },
-        { name: 'TypeScript', level: 95, description: 'Type-safe development, advanced patterns' },
-        { name: 'Tailwind CSS', level: 96, description: 'Custom design systems, responsive layouts' },
-        { name: 'Three.js/WebGL', level: 85, description: '3D graphics, interactive experiences' },
+        { name: 'React.js', level: 98, description: 'Advanced hooks, component-based architecture, performance optimization' },
+        { name: 'React Native', level: 95, description: 'Cross-platform mobile apps, navigation, UI/UX best practices' },
+        { name: 'JavaScript (ES6+)', level: 97, description: 'Modern JS features, async/await, closures, promises' },
+        { name: 'HTML5 & CSS3', level: 96, description: 'Semantic HTML, responsive layouts, modern CSS techniques' },
+        { name: 'Tailwind CSS & Bootstrap', level: 95, description: 'Utility-first styling, responsive design, component libraries' },
+        { name: 'WordPress', level: 90, description: 'Custom themes, plugin integration, content management' },
+        { name: 'Dark/Light Mode', level: 92, description: 'Theming, CSS variables, user preference handling' },
+        { name: 'UI/UX Design', level: 94, description: 'User-centric interfaces, accessibility, mobile-first approach' },
       ],
     },
     {
-      title: 'Backend Excellence',
-      icon: Database,
-      color: 'from-neon-purple to-neon-pink',
-      skills: [
-        { name: 'Node.js/Express', level: 94, description: 'Scalable APIs, microservices architecture' },
-        { name: 'Python/FastAPI', level: 90, description: 'ML integration, high-performance APIs' },
-        { name: 'PostgreSQL/MongoDB', level: 88, description: 'Database optimization, complex queries' },
-        { name: 'GraphQL', level: 85, description: 'Efficient data fetching, schema design' },
-      ],
-    },
-    {
-      title: 'Cloud & DevOps',
-      icon: Cloud,
-      color: 'from-neon-pink to-neon-green',
-      skills: [
-        { name: 'AWS/Azure/GCP', level: 92, description: 'Serverless, containers, infrastructure as code' },
-        { name: 'Docker/Kubernetes', level: 88, description: 'Container orchestration, scaling' },
-        { name: 'CI/CD Pipelines', level: 90, description: 'Automated deployment, testing' },
-        { name: 'Terraform', level: 82, description: 'Infrastructure automation, multi-cloud' },
-      ],
-    },
-    {
-      title: 'AI & Machine Learning',
+      title: 'AI & Innovation',
       icon: Brain,
       color: 'from-neon-green to-neon-yellow',
       skills: [
-        { name: 'TensorFlow/PyTorch', level: 85, description: 'Deep learning, neural networks' },
-        { name: 'OpenAI APIs', level: 90, description: 'GPT integration, prompt engineering' },
-        { name: 'Computer Vision', level: 80, description: 'Image processing, object detection' },
-        { name: 'NLP/LangChain', level: 88, description: 'Text analysis, chatbots, RAG systems' },
+        { name: 'AI-driven tools', level: 90, description: 'Leveraging AI for frontend optimization and automation' },
+        { name: 'ChatGPT & OpenAI APIs', level: 88, description: 'AI integration, prompt engineering for apps' },
+        { name: 'Performance Optimization', level: 95, description: 'Lazy loading, code splitting, responsive performance' },
       ],
     },
   ];
 
   const techStack = [
-    'React', 'TypeScript', 'Node.js', 'Python', 'AWS', 'Docker', 
-    'PostgreSQL', 'MongoDB', 'GraphQL', 'TensorFlow', 'Next.js', 
-    'Tailwind CSS', 'Kubernetes', 'Redis', 'Elasticsearch', 'WebRTC'
+    'React.js', 'React Native', 'JavaScript (ES6+)', 'HTML5', 'CSS3', 
+    'Tailwind CSS', 'Bootstrap', 'WordPress', 'Dark/Light Mode', 'UI/UX Design', 
+    'AI Tools', 'OpenAI APIs', 'Performance Optimization'
   ];
 
   useEffect(() => {
@@ -105,11 +86,11 @@ const Skills = () => {
                 Skills & Expertise
               </span>
             </h2>
-            <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              Constantly evolving with cutting-edge technologies to deliver exceptional solutions.
+            <p className="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              AI-Powered Frontend Developer with 2 years of experience designing and building responsive, user-centric applications.
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple font-semibold">
-                From AI-powered applications to scalable cloud architectures.
+                Skilled in React.js, React Native, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS, Bootstrap, WordPress, dark/light mode, and UI/UX.
               </span>
             </p>
           </motion.div>
@@ -213,36 +194,6 @@ const Skills = () => {
                 </motion.span>
               ))}
             </div>
-          </motion.div>
-
-          {/* Skills Visualization */}
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="mt-20 grid md:grid-cols-4 gap-8"
-          >
-            {[
-              { icon: Code, label: 'Frontend', count: '50+', color: 'text-neon-blue' },
-              { icon: Database, label: 'Backend', count: '40+', color: 'text-neon-purple' },
-              { icon: Cloud, label: 'Cloud', count: '30+', color: 'text-neon-pink' },
-              { icon: Brain, label: 'AI/ML', count: '20+', color: 'text-neon-green' },
-            ].map((stat, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1, duration: 0.5 }}
-                className="text-center bg-black/40 backdrop-blur-xl rounded-2xl border border-white/10 p-8 hover:border-white/20 transition-all duration-300"
-                whileHover={{ scale: 1.05, y: -5 }}
-              >
-                <stat.icon className={`h-12 w-12 ${stat.color} mx-auto mb-4`} />
-                <div className={`text-3xl font-bold ${stat.color} mb-2`}>{stat.count}</div>
-                <div className="text-gray-400 font-medium">{stat.label} Technologies</div>
-              </motion.div>
-            ))}
           </motion.div>
         </div>
       </div>
