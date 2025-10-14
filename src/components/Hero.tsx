@@ -123,7 +123,7 @@ const Hero = () => {
           {/* Contact Details */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-base text-gray-300 font-medium mb-5 mt-3">
             <span>📞 6302720486</span>
-            <a href="mailto:mraghavendra848@gmail.com" className="hover:text-neon-blue">mraghavendra848@gmail.com</a>
+            <a href="mailto:mraghavendramk@gmail.com" className="hover:text-neon-blue">mraghavendramk@gmail.com</a>
             <span>Bangalore</span>
             <a href="https://www.linkedin.com/in/mraghavendra-mrk-a38044278" target="_blank" rel="noopener noreferrer" className="hover:text-neon-purple">LinkedIn Profile</a>
           </div>
@@ -156,7 +156,7 @@ const Hero = () => {
               <Linkedin className="h-6 w-6" />
             </motion.a>
             <motion.a
-              href="mailto:mraghavendra848@gmail.com"
+              href="mailto:mraghavendramrk@gmail.com"
               aria-label="Email"
               className="p-4 rounded-full border border-gray-700 text-gray-400 hover:text-neon-pink transition-all duration-300 backdrop-blur-sm hover:border-current hover:shadow-neon"
               whileHover={{ scale: 1.1, y: -5 }}
