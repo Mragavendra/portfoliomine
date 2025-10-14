@@ -116,7 +116,7 @@ const About = () => {
               </span>
             </h2>
             <p className="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              AI-Powered Frontend Developer with 2 years of experience designing and building responsive, user-centric applications. Skilled in React.js, React Native, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS, Bootstrap, and WordPress, with a strong focus on UI/UX and scalable component-based development. Experienced in implementing modern features like dark/light mode, performance optimization, and mobile-first design. Passionate about leveraging AI-driven tools and frameworks to deliver innovative, efficient, and high-quality digital experiences.
+              AI-Powered Frontend Developer with 1.6 years of experience designing and building responsive, user-centric applications. Skilled in React.js, React Native, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS, Bootstrap, and WordPress, with a strong focus on UI/UX and scalable component-based development. Experienced in implementing modern features like dark/light mode, performance optimization, and mobile-first design. Passionate about leveraging AI-driven tools and frameworks to deliver innovative, efficient, and high-quality digital experiences.
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple font-semibold">
                 Combining creativity with cutting-edge technology to solve complex problems.
