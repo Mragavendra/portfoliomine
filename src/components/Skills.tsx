@@ -87,7 +87,7 @@ const Skills = () => {
               </span>
             </h2>
             <p className="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              AI-Powered Frontend Developer with 2 years of experience designing and building responsive, user-centric applications.
+              AI-Powered Frontend Developer with 1.6 years of experience designing and building responsive, user-centric applications.
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple font-semibold">
                 Skilled in React.js, React Native, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS, Bootstrap, WordPress, dark/light mode, and UI/UX.
