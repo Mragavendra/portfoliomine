@@ -28,14 +28,14 @@ const Footer = () => {
     { name: 'Contact', onClick: () => scrollToSection('contact') },
   ];
 
-  const services = [
-    'Full Stack Development',
-    'AI & Machine Learning',
-    'Cloud Architecture',
-    'Mobile Development',
-    'DevOps & CI/CD',
-    'Technical Consulting'
-  ];
+  // const services = [
+  //   'Full Stack Development',
+  //   'AI & Machine Learning',
+  //   'Cloud Architecture',
+  //   'Mobile Development',
+  //   'DevOps & CI/CD',
+  //   'Technical Consulting'
+  // ];
 
   return (
     <footer className="relative bg-black border-t border-white/10 overflow-hidden">
