@@ -7,7 +7,7 @@ const Footer = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const scrollToSection = (sectionId: string) => {
+  const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -28,24 +28,15 @@ const Footer = () => {
     { name: 'Contact', onClick: () => scrollToSection('contact') },
   ];
 
-  // const services = [
-  //   'Full Stack Development',
-  //   'AI & Machine Learning',
-  //   'Cloud Architecture',
-  //   'Mobile Development',
-  //   'DevOps & CI/CD',
-  //   'Technical Consulting'
-  // ];
-
   return (
     <footer className="relative bg-black border-t border-white/10 overflow-hidden">
-      {/* Background Effects */}
+      {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-t from-black via-dark-50/20 to-black"></div>
       
       <div className="container mx-auto px-6 py-16 relative z-10">
         <div className="max-w-7xl mx-auto">
           {/* Main Footer Content */}
-          <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-12 mb-12">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-12 mb-12">
             {/* Brand Section */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -63,12 +54,12 @@ const Footer = () => {
                   M Raghavendra
                 </span>
               </div>
-              
+
               <p className="text-gray-300 leading-relaxed mb-8 text-lg max-w-md">
-                M Raghavendra crafting next-generation digital experiences with cutting-edge technologies.
+                Crafting next-generation digital experiences with cutting-edge technologies.
                 Transforming ideas into extraordinary realities.
               </p>
-              
+
               <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (
                   <motion.a
@@ -115,27 +106,6 @@ const Footer = () => {
                 ))}
               </ul>
             </motion.div>
-
-            {/* Services */}
-            {/* <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.4, duration: 0.6 }}
-            >
-              <h3 className="text-xl font-bold mb-6">
-                <span className="bg-gradient-to-r from-neon-purple to-neon-pink bg-clip-text text-transparent">
-                  Services
-                </span>
-              </h3>
-              <ul className="space-y-3">
-                {services.map((service, index) => (
-                  <li key={index} className="text-gray-400 text-sm">
-                    {service}
-                  </li>
-                ))}
-              </ul>
-            </motion.div> */}
           </div>
 
           {/* Newsletter Section */}
@@ -181,14 +151,14 @@ const Footer = () => {
           >
             <div className="flex flex-col md:flex-row items-center justify-between">
               <p className="text-gray-400 text-sm mb-4 md:mb-0">
-                © {new Date().getFullYear()} Alex Morgan. All rights reserved. Built with passion and cutting-edge tech.
+                © {new Date().getFullYear()} M Raghavendra. All rights reserved. Built with passion and cutting-edge tech.
               </p>
-              
+
               <div className="flex items-center space-x-6">
                 <p className="text-gray-400 text-sm flex items-center">
-                  Made with <Heart className="h-4 w-4 text-red-500 mx-1 animate-pulse" /> using React, TypeScript & Tailwind CSS
+                  Made with <Heart className="h-4 w-4 text-red-500 mx-1 animate-pulse" /> using React & Tailwind CSS
                 </p>
-                
+
                 <motion.button
                   onClick={scrollToTop}
                   className="p-3 bg-gradient-to-r from-neon-blue to-neon-purple rounded-full text-white hover:scale-110 transition-transform duration-300"
